@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html><head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <title> Manutenzione in corso </title>
+
+    <style>html, body {
+        font-family: sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        background-color: #F7F8FB;
+        height: 100%;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .message {
+        text-align: center;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 20px;
+        max-width: 450px;
+    }
+
+    .message__title {
+        font-size: 22px;
+        font-weight: 100;
+        margin-top: 15px;
+        color: #47494E;
+        margin-bottom: 8px;
+    }
+
+    p {
+        -webkit-margin-after: 0px;
+        -webkit-margin-before: 0px;
+        font-size: 15px;
+        color: #7F828B;
+        line-height: 21px;
+        margin-bottom: 4px;
+    }
+
+    .btn {
+        text-decoration: none;
+        padding: 8px 15px;
+        border-radius: 4px;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #7F828B;
+        border: 1px solid #7F828B;
+    }
+
+    .hk-logo, .app-icon {
+        fill: #DBE1EC;
+    }
+
+    .info {
+        fill: #9FABBC;
+    }
+
+    body.friendly {
+        background: -webkit-linear-gradient(-45deg, #8363a1 0%, #74a8c3 100%);
+        background: linear-gradient(135deg, #8363a1 0%, #74a8c3 100%);
+    }
+
+    body.friendly .message__title {
+        color: #fff;
+    }
+
+    body.friendly p {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    body.friendly .hk-logo, body.friendly .app-icon {
+        fill: rgba(255, 255, 255, 0.9);
+    }
+
+    body.friendly .info {
+        fill: rgba(255, 255, 255, 0.9);
+    }
+
+    body.friendly .btn {
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.9);
+    }
+
+    .info_area {
+        position: fixed;
+        right: 12px;
+        bottom: 12px;
+    }
+
+    .logo {
+        position: fixed;
+        left: 12px;
+        bottom: 12px;
+    }
+    </style> <!-- base href="https://www.herokucdn.com/error-pages/maintenance-mode.html" --> </head>
+<body>
+<div class="spacer"></div>
+<div class="message">
+    <img src="data:image/png;base64,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">
+    <div class="message__title"> Il sito Bici Grill è offline </div>
+    <p> Il sito &egrave; attualmente in manutenzione. </p>
+    <p> Scusandoci per l'inconveniente, vi chiediamo di riprovare pi&ugrave; tardi. </p></div>
+<div class="logo">
+    <svg height="24" width="85" xmlns="http://www.w3.org/2000/svg">
+        <g class="info" fill-rule="evenodd">
+            <path d="M27.8866 16.836h2.373v-3.504h2.919v3.504h2.373V8.164h-2.373v3.2227h-2.919V8.164h-2.373v8.672zm10.4888 0h6.4666V14.949h-4.0935v-1.6054h2.7764v-1.8282h-2.7765v-1.4062h3.8918V8.164h-6.265v8.672zm8.8396 0h2.3256V13.824h.6526L51.89 16.836h2.5154l-1.863-3.3165c1.151-.3867 1.7325-1.1718 1.7325-2.5312 0-2.086-1.3765-2.8242-3.631-2.8242h-3.429v8.672zm2.3256-4.793v-1.9805h1.0204c.973 0 1.4.2578 1.4.9844 0 .7264-.427.996-1.4.996h-1.0204zM60.8363 17c2.112 0 4.307-1.3242 4.307-4.5 0-3.1758-2.195-4.5-4.307-4.5-2.124 0-4.319 1.3242-4.319 4.5 0 3.1758 2.195 4.5 4.319 4.5zm0-1.875c-1.2458 0-1.946-1.0313-1.946-2.625 0-1.5938.7002-2.5664 1.946-2.5664 1.234 0 1.934.9726 1.934 2.5664 0 1.5938-.7 2.625-1.934 2.625zm6.7157 1.711h2.373v-2.6954l.6764-.7734 2.0764 3.4687h2.6816l-3.2155-5.25 2.9543-3.422h-2.7527l-2.4205 3.1407V8.164h-2.373v8.672zm13.4552.1288c2.563 0 3.6782-1.3125 3.6782-3.6093V8.164H82.36v5.1798c0 1.1953-.3798 1.7343-1.329 1.7343-.9493 0-1.3408-.539-1.3408-1.7342V8.164h-2.373v5.1915c0 2.2968 1.127 3.6093 3.69 3.6093zM2.4444 0C.9214 0 0 .8883 0 2.3226v19.3548C0 23.1068.9215 24 2.4444 24h17.1112C21.0736 24 22 23.1117 22 21.6774V2.3226C21.995.8883 21.0735 0 19.5556 0H2.4444zm16.8973 1.9c.4025.0045.7583.3483.7583.7214v18.7572c0 .3776-.3558.7214-.7583.7214H2.6583c-.4025 0-.7583-.3438-.7583-.7214V2.6214c0-.3777.3558-.7214.7583-.7214h16.6834z"></path>
+            <path d="M16.43 20h-2.2527v-6.8048c0-.619-.1917-.838-.3786-.9666-1.131-.7667-4.3855-.0334-6.3458.7333l-1.553.6475L5.9048 4h2.2814v6.3333c.4314-.1333.973-.2714 1.524-.3857 2.4206-.5143 4.1987-.3762 5.3586.4048.6375.4286 1.3612 1.2714 1.3612 2.8428V20zM11.57 8h2.6675c1.4042-1.75 1.9732-3.35 2.1925-4h-2.6623c-.3967.95-1.1223 2.55-2.1977 4zM5.9 20v-5.6l2.43 2.8L5.9 20z"></path>
+        </g>
+    </svg>
+</div>
+
+</body></html>
